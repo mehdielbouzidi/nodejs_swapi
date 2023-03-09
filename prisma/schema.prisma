@@ -1,0 +1,65 @@
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+model People {
+  id         Int      @id @default(autoincrement())
+  name       String
+  height     String?
+  mass       String?
+  hair_color String?
+  skin_color String?
+  eye_color  String?
+  birth_year String?
+  gender     String?
+  homeworld  String?
+  films      String[]
+  species    String[]
+  vehicles   String[]
+  starships  String[]
+  created    DateTime
+  edited     DateTime
+  url        String
+}
+
+model Planets {
+  id              Int      @id @default(autoincrement())
+  name            String
+  rotation_period String?
+  orbital_period  String?
+  diameter        String?
+  climate         String?
+  gravity         String?
+  terrain         String?
+  surface_water   String?
+  population      String?
+  residents       String[]
+  films           String[]
+  created         DateTime
+  edited          DateTime
+  url             String
+}
+
+model Species {
+  id               Int      @id @default(autoincrement())
+  name             String
+  classification   String?
+  designation      String?
+  average_height   String?
+  skin_colors      String?
+  hair_colors      String?
+  eye_colors       String?
+  average_lifespan String?
+  homeworld        String?
+  language         String?
+  people           String[]
+  films            String[]
+  created          DateTime
+  edited           DateTime
+  url              String
+}

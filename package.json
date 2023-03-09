@@ -1,0 +1,37 @@
+{
+  "name": "nodejs_swapi",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "ts-node-dev ./index.ts",
+    "create": "node create-resources.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mehdielbouzidi/nodejs_swapi.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mehdielbouzidi/nodejs_swapi/issues"
+  },
+  "homepage": "https://github.com/mehdielbouzidi/nodejs_swapi#readme",
+  "devDependencies": {
+    "@prisma/client": "^4.11.0",
+    "@types/express": "^4.17.17",
+    "@types/node": "^18.14.6",
+    "axios": "^1.3.4",
+    "dotenv": "^16.0.3",
+    "prisma": "^4.11.0",
+    "ts-node": "^10.9.1",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^4.9.5"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "mysql": "^2.18.1",
+    "reflect-metadata": "^0.1.13",
+    "typeorm": "^0.3.12"
+  }
+}
